@@ -16,23 +16,24 @@ export const Description = () => {
 
     const buttonStyles = cx('Description__button',{
         'Description__button--border':  hasBorder,
-    })
+    });
 
     return(
-        <section className='{styles.Description}'>
+        <section className={styles.Description}>
             <button onClick={handleClick} className={buttonStyles}>
                 <div className={styles.Description__imageContainer}>
                     <Image 
                         src="/images/description.jpeg" 
                         alt="products marketplace" 
                         fill
+                        placeholder='blur'
                         blurDataURL={PLACEHOLDER_IMAGE}
                     />
                 </div>
             </button>
             <div className={styles.Description__text}>
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, quidem debitis a doloribus quam voluptates praesentium dolorum accusamus veritatis obcaecati, totam possimus architecto cum minus nemo? Dolorem molestias necessitatibus praesentium.</p>
+                <h2>Bring the future today</h2>
+                <p>Future World: Your Gateway to Tomorrow&apos;s Tech! Dive into a world of cutting-edge gadgets and gear. Stay ahead of the curve and redefine your digital lifestyle with us.</p>
             </div>
         </section>
     )
