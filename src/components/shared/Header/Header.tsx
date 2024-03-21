@@ -13,7 +13,7 @@ export const Header = async () => {
       <nav>
         <ul className={styles.Header__list}>
           <li>
-            <Link href="/">
+            <Link href="/Home">
               Home
             </Link>
           </li>

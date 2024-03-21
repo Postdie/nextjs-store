@@ -10,12 +10,10 @@ interface CategoryProps {
 }
 
 export default function category(props: CategoryProps){
-    
-    console.log(props)
 
     const { categories } = props.params
 
-    console.log(categories)
+    //throw new Error('Error: Boom!')
 
     return (
 
